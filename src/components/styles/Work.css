@@ -9,6 +9,7 @@
 .work-section {
   transition: 0s;
   height: 100vh;
+  height: 100dvh;
   box-sizing: border-box;
   will-change: transform;
 }
@@ -127,11 +128,11 @@
 }
 .work-image img {
   max-width: 100%;
-  max-height: 350px;
+  max-height: min(350px, 42dvh);
 }
 @media only screen and (max-height: 900px) {
   .work-image img {
-    max-height: 250px;
+    max-height: min(250px, 38dvh);
   }
   .work-box {
     padding-top: 40px;
@@ -165,7 +166,7 @@
     font-size: 50px;
   }
 }
-@media only screen and (max-width: 1400px) {
+@media only screen and (max-width: 900px) {
   .work-box {
     width: 350px;
     padding: 30px;
@@ -178,7 +179,7 @@
 
 @media only screen and (max-height: 650px) {
   .work-image img {
-    max-height: 200px;
+    max-height: min(200px, 32dvh);
   }
   .work-section h2 {
     font-size: 40px;
@@ -188,18 +189,6 @@
     gap: 20px;
   }
 }
-/* @media only screen and (max-width: 900px) {
-  .work-image img {
-    max-height: 200px;
-  }
-  .work-section h2 {
-    font-size: 40px;
-    margin-bottom: 20px;
-  }
-  .work-box {
-    gap: 20px;
-  }
-} */
 @media only screen and (max-width: 1025px) {
   .work-container {
     align-content: normal;
